@@ -15,7 +15,6 @@ cv2.createTrackbar("Lower Hue", "Color detectors", 64, 180,setValues)
 cv2.createTrackbar("Lower Saturation", "Color detectors", 72, 255,setValues)
 cv2.createTrackbar("Lower Value", "Color detectors", 49, 255,setValues)
 
-
 # Giving different arrays to handle colour points of different colour
 bpoints = [deque(maxlen=1024)]
 gpoints = [deque(maxlen=1024)]
