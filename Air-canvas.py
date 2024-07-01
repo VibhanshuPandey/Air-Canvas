@@ -6,6 +6,7 @@ from collections import deque
 def setValues(x):
    print("")
 
+
 # Creating the trackbars needed for adjusting the marker colour
 cv2.namedWindow("Color detectors")
 cv2.createTrackbar("Upper Hue", "Color detectors", 153, 180,setValues)
@@ -47,6 +48,8 @@ cv2.putText(paintWindow, "GREEN", (298, 33), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255
 cv2.putText(paintWindow, "RED", (420, 33), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2, cv2.LINE_AA)
 cv2.putText(paintWindow, "YELLOW", (520, 33), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (150,150,150), 2, cv2.LINE_AA)
 cv2.namedWindow('Paint', cv2.WINDOW_AUTOSIZE)
+
+
 
 
 # Loading the default webcam of PC.
